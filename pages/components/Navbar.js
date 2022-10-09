@@ -1,45 +1,34 @@
-import React from 'react'
-import styled from 'styled-components';
-import Image from 'next/image';
-import logo from '../../public/img/logo.png'
-import icon from '../../public/img/search.png'
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import logo from "../../public/img/logo.png";
+import icon from "../../public/img/search.png";
 
 const Navbar = () => {
   return (
     <Wrapper>
-    <ImageWrapper>
-      <Image 
-        src={logo}
-        width={34}
-        height={34}
-        alt='logo'
-      />
-    </ImageWrapper>
-      
+      <ImageWrapper>
+        <Image src={logo} width={34} height={34} alt='logo' />
+      </ImageWrapper>
+
       <Form>
         <Icon>
-          <Image
-            src={icon}
-            alt='search'
-            width={16}
-            height={16}
-          />
+          <Image src={icon} alt='search' width={16} height={16} />
         </Icon>
-        <Input
-          placeholder='Search'
-        />
+        <Input placeholder='Search' />
       </Form>
     </Wrapper>
   );
-}
+};
 
 export default Navbar;
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 50px
-`
+  margin-left: 20px;
+  margin-top: 20px;
+`;
 const Form = styled.form`
   display: flex;
   align-items: center;
@@ -57,18 +46,15 @@ const Input = styled.input`
   color: rgba(255, 255, 255, 0.25);
   outline: none;
   background: #1d2123;
-  
 `;
 
 const ImageWrapper = styled.div`
   margin-left: 27px;
   margin-top: 23px;
-`
+`;
 
 const Icon = styled.div`
   padding-left: 91px;
   padding-right: 36px;
   cursor: pointer;
-`
-
-
+`;

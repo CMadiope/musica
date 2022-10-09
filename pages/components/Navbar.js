@@ -68,6 +68,7 @@ const ImageWrapper = styled.div`
 const Icon = styled.div`
   padding-left: 91px;
   padding-right: 36px;
+  cursor: pointer;
 `
 
 

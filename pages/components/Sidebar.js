@@ -1,49 +1,29 @@
-import React from 'react'
-import styled from 'styled-components';
-import Image from 'next/image';
-import home from '../../public/img/home.png'
-import library from '../../public/img/music.png'
-import radio from '../../public/img/radio.png'
-import video from '../../public/img/videos.png'
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import home from "../../public/img/home.png";
+import library from "../../public/img/music.png";
+import radio from "../../public/img/radio.png";
+import video from "../../public/img/videos.png";
 
 const Sidebar = () => {
   return (
     <Container>
       <HomeIcon>
-        <Image 
-          src={home}
-          alt='home'
-          width={30}
-          height={30}
-        />
+        <Image src={home} alt='home' width={30} height={30} />
       </HomeIcon>
       <LibraryIcon>
-        <Image 
-          src={library}
-          alt='home'
-          width={22}
-          height={22}
-        />
+        <Image src={library} alt='home' width={22} height={22} />
       </LibraryIcon>
       <RadioIcon>
-        <Image 
-          src={radio}
-          alt='home'
-          width={22}
-          height={22}
-        />
+        <Image src={radio} alt='home' width={22} height={22} />
       </RadioIcon>
       <VideoIcon>
-        <Image 
-          src={video}
-          alt='home'
-          width={22}
-          height={22}
-        />
+        <Image src={video} alt='home' width={22} height={22} />
       </VideoIcon>
     </Container>
-  )
-}
+  );
+};
 
 export default Sidebar;
 
@@ -62,16 +42,8 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-const HomeIcon = styled.div`
+const HomeIcon = styled.div``;
 
-`
-
-const LibraryIcon = styled.div`
-
-`
-const RadioIcon = styled.div`
-
-`
-const VideoIcon = styled.div`
-
-`
+const LibraryIcon = styled.div``;
+const RadioIcon = styled.div``;
+const VideoIcon = styled.div``;

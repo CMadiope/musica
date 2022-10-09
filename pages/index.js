@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
+import Sidebar from './components/Sidebar';
+import Profile from './components/Profile';
+
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
 
         <Navbar/>
         <Sidebar/>
+        <Profile/>
 
       </div>
   )

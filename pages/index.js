@@ -5,7 +5,8 @@ import Sidebar from "./components/Sidebar";
 import Profile from "./components/Profile";
 import Hero from "./components/Hero";
 import styled from "styled-components";
-import { Main } from "next/document";
+import TopCharts from "./components/TopCharts";
+
 
 export default function Home() {
   return (
@@ -22,7 +23,11 @@ export default function Home() {
           <Sidebar />
           <Profile />
         </SideMenu>
-        <Hero />
+        <Charts>
+          <Hero />
+          <TopCharts/>
+        </Charts>
+        
       </MainSection>
     </div>
   );
@@ -32,3 +37,7 @@ const SideMenu = styled.div``;
 const MainSection = styled.div`
   display: flex;
 `;
+
+const Charts = styled.div`
+  display: flex;
+`

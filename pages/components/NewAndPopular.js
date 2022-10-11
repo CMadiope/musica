@@ -6,7 +6,7 @@ import pic2 from "../../public/img/Rectangle 14 (2).png";
 import pic3 from "../../public/img/Rectangle 14 (3).png";
 import pic4 from "../../public/img/Rectangle 14 (4).png";
 import pic5 from "../../public/img/Rectangle 14 (5).png";
-import pic6 from "../../public/img/Rectangle 14 (6).png";
+import pic6 from "../../public/img/Rectangle 14.png";
 
 const NewAndPopular = () => {
   return (
@@ -17,26 +17,32 @@ const NewAndPopular = () => {
           <Album>
             <Image src={pic1} alt='album-cover' />
             <AlbumName>Mountain</AlbumName>
+            <Artist>Krisx</Artist>
           </Album>
           <Album>
             <Image src={pic2} alt='album-cover' />
             <AlbumName>Limits</AlbumName>
+            <Artist>John Dillion</Artist>
           </Album>
           <Album>
             <Image src={pic3} alt='album-cover' />
             <AlbumName>Everything's black</AlbumName>
+            <Artist>Ameed</Artist>
           </Album>
           <Album>
             <Image src={pic4} alt='album-cover' />
             <AlbumName>Cancelled</AlbumName>
+            <Artist>Enimen</Artist>
           </Album>
           <Album>
             <Image src={pic5} alt='album-cover' />
             <AlbumName>Nomad</AlbumName>
+            <Artist>Makrol eli</Artist>
           </Album>
           <Album>
             <Image src={pic6} alt='album-cover' />
-            <AlbumName>Blind</AlbumName>
+            <AlbumName>Life in a bubble</AlbumName>
+            <Artist>The van</Artist>
           </Album>
         </AblumContainer>
       </NewReleases>
@@ -46,26 +52,32 @@ const NewAndPopular = () => {
           <Album>
             <Image src={pic1} alt='album-cover' />
             <AlbumName>Mountain</AlbumName>
+            <Artist>Krisx</Artist>
           </Album>
           <Album>
             <Image src={pic2} alt='album-cover' />
             <AlbumName>Limits</AlbumName>
+            <Artist>John Dillion</Artist>
           </Album>
           <Album>
             <Image src={pic3} alt='album-cover' />
             <AlbumName>Everything's black</AlbumName>
+            <Artist>Ameed</Artist>
           </Album>
           <Album>
             <Image src={pic4} alt='album-cover' />
             <AlbumName>Cancelled</AlbumName>
+            <Artist>Enimen</Artist>
           </Album>
           <Album>
             <Image src={pic5} alt='album-cover' />
             <AlbumName>Nomad</AlbumName>
+            <Artist>Makrol eli</Artist>
           </Album>
           <Album>
             <Image src={pic6} alt='album-cover' />
-            <AlbumName>Blind</AlbumName>
+            <AlbumName>Life in a bubble</AlbumName>
+            <Artist>The van</Artist>
           </Album>
         </AblumContainer>
       </Popular>
@@ -105,5 +117,11 @@ const AlbumName = styled.span`
   padding-top: 5px;
   line-height: 15px;
 `;
+const Artist = styled.span`
+  color: white;
+  opacity: 0.5;
+  font-size: 12px;
+  padding-top: 10px;
+`
 
 const Popular = styled.div``;

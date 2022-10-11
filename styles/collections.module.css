@@ -1,0 +1,33 @@
+.album1 {
+  background-image: url('../public/img/Rectangle\ 26\ \(3\).png');
+  width: 213px;
+  height: 243px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  cursor: pointer;
+}
+.album2 {
+  background-image: url('../public/img/Rectangle\ 26\ \(2\).png');
+  width: 213px;
+  height: 243px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  cursor: pointer;
+}
+.album3 {
+  background-image: url('../public/img/Rectangle\ 26\ \(1\).png');
+  width: 213px;
+  height: 243px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  cursor: pointer;
+}
+.album4 {
+  background-image: url('../public/img/Rectangle\ 26.png');
+  width: 213px;
+  height: 243px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 20px;
+}

@@ -6,7 +6,7 @@ import Profile from "./components/Profile";
 import Hero from "./components/Hero";
 import styled from "styled-components";
 import TopCharts from "./components/TopCharts";
-
+import NewAndPopular from "./components/NewAndPopular";
 
 export default function Home() {
   return (
@@ -25,10 +25,10 @@ export default function Home() {
         </SideMenu>
         <Charts>
           <Hero />
-          <TopCharts/>
+          <TopCharts />
         </Charts>
-        
       </MainSection>
+      <NewAndPopular />
     </div>
   );
 }
@@ -40,4 +40,4 @@ const MainSection = styled.div`
 
 const Charts = styled.div`
   display: flex;
-`
+`;

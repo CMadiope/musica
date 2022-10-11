@@ -41,9 +41,7 @@ const Hero = () => {
         <Heart>
           <Image src={heart} alt='heart' width={13.33} height={12.67} />
         </Heart>
-        <Likes>
-          33K Likes
-        </Likes>
+        <Likes>33K Likes</Likes>
       </MainSection>
     </Wrapper>
   );
@@ -52,7 +50,7 @@ const Hero = () => {
 export default Hero;
 
 const Wrapper = styled.div`
-  padding-left: 96px;
+  padding-left: 24px;
   padding-top: 96px;
 `;
 const MainSection = styled.div`
@@ -126,4 +124,4 @@ const Likes = styled.p`
   position: relative;
   padding-left: 152px;
   top: -696px;
-`
+`;

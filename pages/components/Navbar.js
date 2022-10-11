@@ -25,7 +25,7 @@ export default Navbar;
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-left: 20px;
   margin-top: 20px;
 `;
@@ -35,7 +35,8 @@ const Form = styled.form`
   width: 1122px;
   height: 96px;
   background-color: #1d2123;
-  padding-left: 62px;
+  /* padding-left: 34px; */
+  /* padding-right: 96px; */
 `;
 const Input = styled.input`
   font-size: 14px;
@@ -51,6 +52,7 @@ const Input = styled.input`
 const ImageWrapper = styled.div`
   margin-left: 27px;
   margin-top: 23px;
+  margin-right: 34px
 `;
 
 const Icon = styled.div`

@@ -1,0 +1,10 @@
+.container {
+  background-image: url('../public/img/Lead-image.png');
+  width: 100vw;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+

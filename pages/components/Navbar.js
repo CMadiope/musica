@@ -34,9 +34,9 @@ const Form = styled.form`
   align-items: center;
   width: 1122px;
   height: 96px;
-  background-color: #1d2123;
-  /* padding-left: 34px; */
-  /* padding-right: 96px; */
+  /* background-color: #1d2123; */
+  background-color: transparent;
+  
 `;
 const Input = styled.input`
   font-size: 14px;
@@ -46,7 +46,8 @@ const Input = styled.input`
   border: none;
   color: rgba(255, 255, 255, 0.25);
   outline: none;
-  background: #1d2123;
+  /* background: #1d2123; */
+  background-color: transparent;
 `;
 
 const ImageWrapper = styled.div`

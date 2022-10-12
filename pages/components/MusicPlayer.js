@@ -7,7 +7,7 @@ import previous from "../../public/img/previous.png";
 import next from "../../public/img/next.png";
 import repeat from "../../public/img/repeate-one.png";
 import shuffle from "../../public/img/shuffle.png";
-import icon from '../../public/img/volume-high.png'
+import icon from "../../public/img/volume-high.png";
 
 const MusicPlayer = () => {
   return (
@@ -47,10 +47,7 @@ const MusicPlayer = () => {
       </SongControls>
       <VolumeControls>
         <Icon>
-          <Image 
-            src={icon}
-            alt='volume high'
-          />
+          <Image src={icon} alt='volume high' />
         </Icon>
         <Volume>
           <Level></Level>
@@ -84,7 +81,6 @@ const Song = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 10px;
-  
 `;
 
 const SongName = styled.span`
@@ -156,12 +152,12 @@ const VolumeControls = styled.div`
   display: flex;
   padding-left: 23.94px;
   padding-top: 46px;
-`
+`;
 
 const Icon = styled.div`
   padding-right: 12.19px;
-  cursor: pointer
-`
+  cursor: pointer;
+`;
 
 const Volume = styled.div`
   width: 160px;
@@ -175,5 +171,4 @@ const Level = styled.div`
   width: 51px;
   height: 3px;
   background-color: rgba(250, 205, 102, 1);
-  
 `;

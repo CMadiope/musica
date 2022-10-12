@@ -3,9 +3,8 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Profile from "./components/Profile";
-import Image from "next/image";
-import limits from "../public/img/Rectangle 26 (3).png";
 import styles from "../styles/collections.module.css";
+import MusicPlayer from "./components/MusicPlayer";
 
 const collections = () => {
   return (
@@ -50,6 +49,7 @@ const collections = () => {
           </AlbumContainer>
         </Hero>
       </MainSection>
+      <MusicPlayer/>
     </div>
   );
 };

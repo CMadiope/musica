@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "../../public/img/logo.png";
+import logo from "../../public/img/two.png";
 import icon from "../../public/img/search.png";
 
 const Navbar = () => {

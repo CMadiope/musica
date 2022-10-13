@@ -29,7 +29,7 @@ const NewAndPopular = () => {
           </Album>
           <Album>
             <Image src={pic3} alt='album-cover' />
-            <AlbumName>Everything's black</AlbumName>
+            <AlbumName>Everythings black</AlbumName>
             <Artist>Ameed</Artist>
           </Album>
           <Album>
@@ -64,7 +64,7 @@ const NewAndPopular = () => {
           </Album>
           <Album>
             <Image src={pic3} alt='album-cover' />
-            <AlbumName>Everything's black</AlbumName>
+            <AlbumName>Everythings black</AlbumName>
             <Artist>Ameed</Artist>
           </Album>
           <Album>

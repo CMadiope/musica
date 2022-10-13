@@ -8,12 +8,15 @@ import pic4 from "../../public/img/Rectangle 14 (4).png";
 import pic5 from "../../public/img/Rectangle 14 (5).png";
 import pic6 from "../../public/img/Rectangle 14.png";
 
+
+
 const NewAndPopular = () => {
   return (
     <Wrapper>
       <NewReleases>
         <Heading>New releases</Heading>
         <AblumContainer>
+        
           <Album>
             <Image src={pic1} alt='album-cover' />
             <AlbumName>Mountain</AlbumName>

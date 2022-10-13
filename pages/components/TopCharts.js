@@ -5,6 +5,7 @@ import golden from "../../public/img/GoldenAge.png";
 import reggae from "../../public/img/Reggae.png";
 import stroke from "../../public/img/Stroke-1.png";
 import tunes from "../../public/img/tunes.png";
+import Link from "next/link";
 
 const TopCharts = () => {
   return (
@@ -45,23 +46,25 @@ const TopCharts = () => {
           </Heart>
         </Flex>
       </Card2>
-      <Card3>
-        <Flex>
-          <Album>
-            <Image src={tunes} alt='tomorrows tunes' />
-          </Album>
-          <AlbumInfo>
-            <Title>Tomorrow’s tunes</Title>
-            <Artist>Obi Datti</Artist>
-            <Duration>2:01:25</Duration>
-          </AlbumInfo>
-          <Heart>
-            <HeartContainer>
-              <Image className='heart' src={stroke} alt='heart' />
-            </HeartContainer>
-          </Heart>
-        </Flex>
-      </Card3>
+      <Link href='/tomorrow'>
+        <Card3>
+          <Flex>
+            <Album>
+              <Image src={tunes} alt='tomorrows tunes' />
+            </Album>
+            <AlbumInfo>
+              <Title>Tomorrow’s tunes</Title>
+              <Artist>Obi Datti</Artist>
+              <Duration>2:01:25</Duration>
+            </AlbumInfo>
+            <Heart>
+              <HeartContainer>
+                <Image className='heart' src={stroke} alt='heart' />
+              </HeartContainer>
+            </Heart>
+          </Flex>
+        </Card3>
+      </Link>
     </Wrapper>
   );
 };
@@ -85,6 +88,12 @@ const Card1 = styled.div`
   border-radius: 20px;
   background-color: #1a1e1f;
   margin-left: 20px;
+
+  /* cursor: pointer; */
+
+  &:hover {
+    transform: scale(1.06);
+  }
 `;
 
 const Flex = styled.div`
@@ -104,6 +113,10 @@ const Title = styled.h3`
   font-size: 17px;
   line-height: 20.4px;
   font-weight: lighter;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
 `;
 
 const Artist = styled.p`

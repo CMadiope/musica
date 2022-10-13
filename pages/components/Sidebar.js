@@ -5,16 +5,22 @@ import home from "../../public/img/home.png";
 import library from "../../public/img/music.png";
 import radio from "../../public/img/radio.png";
 import video from "../../public/img/videos.png";
+import Link from "next/link";
 
 const Sidebar = () => {
   return (
     <Container>
       <HomeIcon>
-        <Image src={home} alt='home' width={30} height={30} />
+        <Link href='/'>
+          <Image src={home} alt='home' width={30} height={30} />
+        </Link>
       </HomeIcon>
-      <LibraryIcon>
+      <Link href='/collections'>
+        <LibraryIcon>
         <Image src={library} alt='home' width={22} height={22} />
       </LibraryIcon>
+      </Link>
+      
       <RadioIcon>
         <Image src={radio} alt='home' width={22} height={22} />
       </RadioIcon>
@@ -42,8 +48,32 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-const HomeIcon = styled.div``;
+const HomeIcon = styled.div`
+  cursor: pointer;
 
-const LibraryIcon = styled.div``;
-const RadioIcon = styled.div``;
-const VideoIcon = styled.div``;
+  &:hover {
+    transform: scale(1.5);
+  }
+`;
+
+const LibraryIcon = styled.div`
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+`;
+const RadioIcon = styled.div`
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+`;
+const VideoIcon = styled.div`
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+`;

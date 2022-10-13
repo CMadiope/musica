@@ -44,7 +44,17 @@ const Wrapper = styled.div`
 
 const ProfileIcon = styled.div`
   margin-bottom: 15px;
-`
-const LogoutIcon = styled.div`
 
-`
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+`;
+const LogoutIcon = styled.div`
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+`;

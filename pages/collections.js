@@ -78,6 +78,10 @@ const Button1 = styled.button`
   font-size: 14px;
   margin-right: 10px;
   cursor: pointer;
+
+  &:hover {
+    background: rgba(250, 205, 102, 0.5);
+  }
 `;
 
 const Button2 = styled.button`
@@ -89,6 +93,10 @@ const Button2 = styled.button`
   background: rgba(239, 238, 224, 0.25);
   color: #1d2123;
   cursor: pointer;
+
+  &:hover {
+    background: rgba(239, 238, 224, 1);
+  }
 `;
 
 const AlbumContainer = styled.div`

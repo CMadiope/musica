@@ -3,24 +3,34 @@ import styled from "styled-components";
 import Image from "next/image";
 import home from "../../public/img/home.png";
 import library from "../../public/img/music.png";
+import libraryActive from "../../public/img/library-active.png";
 import radio from "../../public/img/radio.png";
 import video from "../../public/img/videos.png";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import homeActive from "../../public/img/home-active.png";
 
 const Sidebar = () => {
+  const router = useRouter();
+
   return (
     <Container>
       <HomeIcon>
         <Link href='/'>
-          <Image src={home} alt='home' width={30} height={30} />
+          <Image
+            src={router.pathname == "/" ? homeActive : home}
+            alt='home'
+            width={30}
+            height={30}
+          />
         </Link>
       </HomeIcon>
       <Link href='/collections'>
         <LibraryIcon>
-        <Image src={library} alt='home' width={22} height={22} />
-      </LibraryIcon>
+          <Image src={router.pathname == '/collections' ? libraryActive : library} alt='home' width={22} height={22} />
+        </LibraryIcon>
       </Link>
-      
+
       <RadioIcon>
         <Image src={radio} alt='home' width={22} height={22} />
       </RadioIcon>
